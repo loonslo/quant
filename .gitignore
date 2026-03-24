@@ -1,0 +1,37 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+fetch.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Node (for crypto-trading-dashboard)
+node_modules/
+dist/
+build/
+
+# Python (if any)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# API keys and secrets (check these don't contain real keys!)
+fund_config*.json
+*.key
