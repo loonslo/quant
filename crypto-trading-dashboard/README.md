@@ -20,7 +20,7 @@
 - **样式**: 原生CSS + CSS变量
 - **状态管理**: React内置状态（useState、useContext）
 - **路由**: React Router v6
-- **构建工具**: Create React App
+- **构建工具**: Vite (已从 CRA 迁移，2025)
 
 ## 项目结构
 
@@ -92,6 +92,23 @@ npm run build
 # 代码检查
 npm run lint
 ```
+
+### API 代理说明
+
+本项目通过 Vite 代理连接后端服务（默认：`http://localhost:8000`）。代理配置位于 `vite.config.js`：
+
+```js
+server: {
+  proxy: {
+    '/api': {
+      target: 'http://localhost:8000',
+      changeOrigin: true,
+    },
+  },
+}
+```
+
+如需修改后端地址，编辑 `vite.config.js` 中的 `target` 配置。
 
 ## API接口说明
 
