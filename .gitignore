@@ -35,3 +35,11 @@ Thumbs.db
 # API keys and secrets (check these don't contain real keys!)
 fund_config*.json
 *.key
+
+# Workspace / AI agent artifacts
+.claude/
+.kiro/
+api_v2_quick_reference.md
+final_api_v2_summary.md
+updates_summary.md
+优化v2.md
